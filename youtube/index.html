@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Youtube</title>
+
+    <meta name="bs:version" content="0.0.1" />
+    <meta name="bs:name" content="Youtube" />
+    <meta name="bs:input:youtubeUrl" content="type=string,description=Youtube URL" />
+    <meta name="bs:input:buttonName" content="type=string,description=Display name for the button" />
+    <meta
+      name="bs:output:currentSeconds"
+      content="type=number,description=The elapsed time in seconds since the video started playing"
+    />
+    <meta name="bs:outlet:Button Clicked" />
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="player">...loading</div>
+      <div id="btn" onclick="sendResponse()"></div>
+    </div>
+
+    <script src="index.js"></script>
+
+    <!--
+      BotStar Webview SDK is required if you want to use BotStarWebview's functions.
+      Function onChatBotReady will be called when BotStarWebview is ready to use.
+    -->
+    <script defer src="https://static.botstar.com/webview/sdk/webview-sdk-1.0.0.js"></script>
+  </body>
+</html>
