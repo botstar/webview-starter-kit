@@ -1,18 +1,5 @@
-@font-face {
-  font-family: 'Proxima Nova';
-  src: url('./fonts/proximanova-regular.eot');
-  src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
-    url('./fonts/proximanova-regular.eot?#iefix') format('embedded-opentype'),
-    url('./fonts/proximanova-regular.woff2') format('woff2'), url('./fonts/proximanova-regular.woff') format('woff'),
-    url('./fonts/proximanova-regular.ttf') format('truetype'),
-    url('./fonts/proximanova-regular.svg#ProximaNova-Regular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
-  font-family: 'Proxima Nova', 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .wrapper {

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Place Autocomplete</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8" />
+
+    <meta name="bs:version" content="0.0.1" />
+    <meta name="bs:name" content="Google Maps" />
+    <meta name="bs:input:googlemapsKey" content="type=string,description=Google Maps API Key" />
+    <meta name="bs:input:defaultAddress" content="type=string,description=Default address" />
+    <meta name="bs:input:buttonName" content="type=string,description=Custom name of submit button" />
+    <meta name="bs:output:latitude" content="type=number,description=Selected Latitude" />
+    <meta name="bs:output:longitude" content="type=number,description=Selected Longitude" />
+    <meta name="bs:output:name" content="type=string,description=Selected Name" />
+    <meta name="bs:output:address" content="type=string,description=Selected Address" />
+    <meta name="bs:outlet:Chose Location" />
+
+    <link rel="stylesheet" href="index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="pac-card" id="pac-card">
+      <input id="pac-input" type="text" placeholder="Search location here" />
+    </div>
+
+    <div id="map"></div>
+    <div id="infowindow-content">
+      <img src="" width="16" height="16" id="place-icon" />
+      <span id="place-name" class="title"></span><br />
+      <span id="place-address"></span>
+      <span id="place-lat"></span><br />
+      <span id="place-lng"></span>
+      <button id="choose-location" class="btn" onclick="sendResponse()"></button>
+    </div>
+
+    <script src="index.js"></script>
+
+    <!--
+      BotStar Webview SDK is required if you want to use BotStarWebview's functions.
+      Function onChatBotReady will be called when BotStarWebview is ready to use.
+    -->
+    <script defer src="https://static.botstar.com/webview/sdk/webview-sdk-1.0.0.js"></script>
+  </body>
+</html>
