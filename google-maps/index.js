@@ -31,9 +31,9 @@ function sendResponse() {
     @param outputs: will be sent back to chatbot. You have to define HTML meta "bs:output:latitude", "bs:output:longitude", "bs:output:name", "bs:output:address" in order to send back.
                     You can send as many pro as you want, i.e: { customerName: 'Tommy', age: maxAge }
                     then define two HTML metas "bs:output:customerName" and "bs:output:age"
-    @param Chose Location: outlet name, will be sent back to chatbot. You have to define HTML meta "bs:outlet:Chose Location" in order to send back.
+    @param Location Picked: outlet name, will be sent back to chatbot. You have to define HTML meta "bs:outlet:Location Picked" in order to send back.
   */
-  BotStarWebview('sendResponse', '', outputs, 'Chose Location').catch((err) => {
+  BotStarWebview('sendResponse', '', outputs, 'Location Picked').catch((err) => {
     console.log(err);
   });
 }
