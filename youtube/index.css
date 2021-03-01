@@ -16,13 +16,6 @@ body {
   text-align: center;
 }
 
-#player {
-  min-height: 340px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 #btn {
   display: none;
   padding: 12px 20px;
@@ -34,4 +27,18 @@ body {
 
 #btn:hover {
   background-color: #fafafa;
+}
+
+.video-responsive {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video-responsive iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
 }
